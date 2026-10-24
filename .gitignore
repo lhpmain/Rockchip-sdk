@@ -181,3 +181,12 @@ sphinx_*/
 
 # Rust analyzer configuration
 /rust-project.json
+scripts/kconfig/mconf-cfg
+
+# ---- local additions (RK3588 SDK) ----
+*.bak
+*.orig
+*.rej
+*.swp
+*~
+# check-config.sh

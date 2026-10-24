@@ -6,8 +6,8 @@
 
 /dts-v1/;
 
-#include "rk3588-evb7-v11.dtsi"
-#include "rk3588-evb7-v11-imx415.dtsi"
+// #include "rk3588-evb7-v11.dtsi"
+#include "rk3588-umdev-lp5.dtsi"
 #include "rk3588-linux.dtsi"
 
 / {
@@ -22,8 +22,8 @@
 	uart-has-rtscts;
 
 	bluetooth {
-		compatible = "brcm,bcm4345c5";
-		clocks = <&hym8563>;
+		compatible = "realtek,rtl8822cs-bt";
+		clocks = <&pcf8563>;
 		clock-names = "txco";
 
 		device-wakeup-gpios = <&gpio0 RK_PC5 GPIO_ACTIVE_HIGH>;
